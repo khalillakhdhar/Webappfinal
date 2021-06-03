@@ -58,6 +58,7 @@ public class FormationServlet extends HttpServlet {
 		{
 			erreur="le prix dois être >100";
 		}
+		request.setAttribute("erreur",erreur);
 		rd.forward(request, response);
 		
 		}
