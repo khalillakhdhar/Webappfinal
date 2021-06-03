@@ -18,11 +18,22 @@
        <form>
   <div class="mb-3">
     <label for="titre" class="form-label">Titre</label>
-    <input type="text" name="titre" class="form-control" id="titre" >
+    <input type="text" required name="titre" class="form-control" id="titre" >
   </div>
- 
+ <div class="mb-3">
+    <label for="prix"  class="form-label">Prix</label>
+    <input type="number" min="100" name="prix" class="form-control" id="prix" >
+  </div>
+  <div class="mb-3">
+    <label for="description" class="form-label">Description</label>
+    <textarea required name="description" class="form-control" id="description" ></textarea>
+  </div>
   <button type="submit" class="btn btn-primary">Submit</button>
 </form>
+<% if(request.getAttribute("erreur")!=null) { %><h3>
+<%=request.getAttribute("erreur")  %>
+
+</h3> <% } %>
     </div>
     <div class="col">
      
