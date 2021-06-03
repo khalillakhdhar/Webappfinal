@@ -42,7 +42,7 @@ public class FormationServlet extends HttpServlet {
 		//doGet(request, response);
 		Validator v=new Validator();
 		String erreur="ajout avec succés";
-		RequestDispatcher rd=request.getRequestDispatcher("index");
+		RequestDispatcher rd=request.getRequestDispatcher("index.jsp");
 		String titre=request.getParameter("titre");
 		if(!v.testLonguer(titre))
 		{

@@ -15,7 +15,7 @@
       
     </div>
     <div class="col">
-       <form>
+       <form method="post" action="FormationServlet">
   <div class="mb-3">
     <label for="titre" class="form-label">Titre</label>
     <input type="text" required name="titre" class="form-control" id="titre" >
